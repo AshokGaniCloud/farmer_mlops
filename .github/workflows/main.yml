@@ -6,6 +6,8 @@ jobs:
     container: docker://dvcorg/cml-py3:latest
     steps:
       - uses: actions/checkout@v2
+        with:
+          lfs: true
       - name: Iterative Setup
         uses: iterative/setup-cml@v1
       - name: Install Python
