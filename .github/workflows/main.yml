@@ -5,6 +5,7 @@ jobs:
     runs-on: [ubuntu-latest]
     container: docker://dvcorg/cml-py3:latest
     steps:
+      - uses: iterative/setup-dvc@v1
       - uses: actions/checkout@v2
         with:
           lfs: true
